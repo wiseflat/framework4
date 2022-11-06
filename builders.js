@@ -4251,6 +4251,11 @@ RESTP.error = function(err) {
 	return this;
 };
 
+RESTP.insecure = function() {
+	this.options.insecure = true;
+	return this;
+};
+
 RESTP.strict = function() {
 	this.$strict = true;
 	return this;
